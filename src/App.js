@@ -1,12 +1,12 @@
 import './App.css';
 import Header from './components/header/Header';
-import Sidebar from './components/Sidebar/Sidebar';
+import Navbar from './components/Navbar/Navbar';
 function App() {
   return (
     <div className="App">
       <Header />
       <div className='w-full min-h-[90vh] grid grid-cols-12'>
-        <Sidebar />
+        <Navbar />
       </div>
     </div>
   );

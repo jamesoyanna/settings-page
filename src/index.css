@@ -6,6 +6,9 @@
   .button {
     @apply w-20 h-10 cursor-pointer bg-black text-white shadow-white rounded-md
   }
+  .nav-icon{
+    @apply w-6 h-6 cursor-pointer text-gray-500;
+  }
 }
 
 body {
