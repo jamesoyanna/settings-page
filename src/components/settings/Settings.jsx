@@ -97,7 +97,17 @@ const Settings = () => {
         <img src={Checkicon} alt='check icon' className="bg-white h-4 w-4 py-1 px-1 border-2 rounded-lg mb-9 mr-2" />
 	</div>
 </div>
-<p className='w-full ml-12 mt-2 text-gray-500 font-semibold'> + Add payment method</p> 
+
+<div class="grid grid-cols-4">
+  <div className="col-span-2">
+ </div>
+	<div class="sm:flex-row sm:gap-0">
+	<div class=" pt-4 sm:flex-row">
+      <p className='ml-12 mt-2 text-gray-500 text-md'> + Add payment method</p> 
+		</div>
+        
+	</div>
+</div>
 </div>
   )
 }

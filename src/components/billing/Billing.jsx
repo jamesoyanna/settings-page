@@ -4,10 +4,11 @@ import DownloadIcon from '../../images/download.png'
 const Billing = () => {
   return (
     <div className="sm:px-6 w-full">
-                <div className="px-4 md:px-1 py-4 md:py-7">
-                    <div className="flex items-center justify-between">
-                        <p className="focus:outline-none text-md font-bold leading-normal text-gray-500">Billing History</p>
-                        <button className="py-3 px-4 flex items-center text-sm font-medium leading-none text-gray-600 bg-white border hover:bg-gray-300 cursor-pointer rounded">
+                <div className="md:px-1">
+                    <div className="flex justify-between">
+                        <p className="text-md font-semibold text-gray-600">Billing History</p>
+                        <button className="py-2 px-3 flex items-center text-sm font-medium leading-none text-gray-600 bg-white border cursor-pointer rounded">
+                        <img src={DownloadIcon} alt='donload icon' className='mr-3' />
                         Download All
                         </button>
                     </div>
@@ -88,8 +89,6 @@ const Billing = () => {
                                             </div>
                                         </div>
                                     </td>
-
-
                                     <td className="">
                                         <div className="flex items-center pl-5">
                                             <p className="text-base font-medium leading-none text-gray-700 mr-2">Basic Plan - Dec 2022</p>
