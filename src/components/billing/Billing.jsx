@@ -1,5 +1,6 @@
 import React from 'react'
 import DownloadIcon from '../../images/download.png'
+import ArrowIcon from '../../images/arrow-icon.png'
 
 const Billing = () => {
   return (
@@ -19,7 +20,8 @@ const Billing = () => {
                         <thead>
           <tr>
             <th className="px-8 align-middle py-6 text-left text-gray-400 text-sm"></th>
-            <th className="px-8 align-middle py-6 text-left text-gray-400 text-sm">Invoice
+            <th className="flex items-center px-8 align-middle py-6 text-left text-gray-400 text-sm">Invoice
+            <img className='ml-2' src={ArrowIcon} alt='arrow icon' />
             </th>
             <th className="px-8 align-middle py-6 text-left text-gray-400 text-sm">Amount</th>
             <th className="px-8 align-middle py-6 text-left text-gray-400 text-sm">Date</th>
@@ -75,7 +77,7 @@ const Billing = () => {
               </div>
             </td>
             <td>
-            <img src={DownloadIcon}  alt="download icon" className="w-5 h-5" />  
+            <img src={DownloadIcon}  alt="download icon" className="w-5 h-5 ml-6" />  
             </td>
              </tr>
 
@@ -124,14 +126,12 @@ const Billing = () => {
               </div>
             </td>
              </tr>
-             
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
             
   )
 }
-
 export default Billing
