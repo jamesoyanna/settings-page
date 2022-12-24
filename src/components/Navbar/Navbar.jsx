@@ -40,7 +40,7 @@ const Navbar = () => {
    <div className="w-full flex items-center justify-start space-x-4 px-5 py-2 cursor-pointer group hover:bg-gray-100 border-l-2 border-transparent transform rounded-md">
    <img src={DashboardIcon} alt="dahboard icon" className='h-5 w-4' />
     <h1 className='text=gray-600 group-hover:text-black xl:flex hidden'>Dashboard</h1>
-    <span class="flex items-center justify-center text-sm text-gray-500 font-semibold bg-gray-200 h-6 px-2 rounded-full ml-auto">10</span>
+    <span className="flex items-center justify-center text-sm text-gray-500 font-semibold bg-gray-200 h-6 px-2 rounded-full ml-auto">10</span>
    </div>
 
 

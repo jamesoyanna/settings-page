@@ -23,9 +23,9 @@ const Settings = () => {
 </div>
 
 
-<div class="grid grid-cols-4 border-t">
+<div className="grid grid-cols-4 border-t">
   <div className="py-4 col-span-2">
-<div class="mt-4 lg:w-1/2 lg:mt-0">
+<div className="mt-4 lg:w-1/2 lg:mt-0">
 <h4 className="font-semibold text-md text-gray-500 flex"> Contact Email</h4>
 <p className="text-base leading-relaxed text-gray-500 flex">Where should invoice be sent ?</p>
  </div>
@@ -33,34 +33,34 @@ const Settings = () => {
 
  
 <div className="px-2 py-4">
-<div class="flex pt-4 lg:w-full lg:mt-0">
+<div className="flex pt-4 lg:w-full lg:mt-0">
 <input type="radio" className="h-4 w-4 text-purple-500 mr-3 mt-1" />
-<p class="text-gray-700 text-base font-medium leading-none">Send to my account email</p>
+<p className="text-gray-700 text-base font-medium leading-none">Send to my account email</p>
 </div>
 <p className='text-gray-500'>olivia@untitledui.com</p>
-<div class="flex pt-1">
+<div className="flex pt-1">
 <input type="radio" className="h-4 w-4 text-purple-500 mr-3 mt-1" />
-<p class="text-gray-700">Send to an alternative email</p>
+<p className="text-gray-700">Send to an alternative email</p>
 </div>
-<div class="bg-white border border-slate-10 h-2 pb-8 shadow-sm rounded-md pt-1 p-6 mt-6 flex flex-col w-[350px] mx-auto items-start">
-    <h1 class="text-base font-semibold text-gray-600">billing@untitledui.com</h1>
+<div className="bg-white border border-slate-10 h-2 pb-8 shadow-sm rounded-md pt-1 p-6 mt-6 flex flex-col w-[350px] mx-auto items-start">
+    <h1 className="text-base font-semibold text-gray-600">billing@untitledui.com</h1>
 	</div>
  </div>
  </div>
 
 
  {/* Visa Card details */}
- <div class="grid grid-cols-4 border-t">
+ <div className="grid grid-cols-4 border-t">
   <div className="py-4 col-span-2">
-<div class="mt-4 lg:mt-0">
+<div className="mt-4 lg:mt-0">
 <h4 className="font-semibold text-md text-gray-500 flex"> Card details</h4>
 <p className="text-base leading-relaxed text-gray-500 flex">Select default payment method</p>
  </div>
  </div>
 
-	<div class="w-[510px]  bg-purple-50 rounded-lg shadow-sm p-1 border border-purple-500 flex flex-col sm:flex-row justify-between items-center mt-6 gap-2 sm:gap-0">
-		<div class="flex flex-col sm:flex-row justify-start items-center gap-4">
-			<div class="flex rounded-md bg-white py-2 px-2">
+	<div className="w-[510px]  bg-purple-50 rounded-lg shadow-sm p-1 border border-purple-500 flex flex-col sm:flex-row justify-between items-center mt-6 gap-2 sm:gap-0">
+		<div className="flex flex-col sm:flex-row justify-start items-center gap-4">
+			<div className="flex rounded-md bg-white py-2 px-2">
                 <img src={VisaLogo} alt='visa logo' />
             </div>
 			<div className="text-center sm:text-left">
@@ -75,17 +75,17 @@ const Settings = () => {
 
 {/* Mater Card details */}
 
-<div class="grid grid-cols-4 border-t">
+<div className="grid grid-cols-4 border-t">
   <div className="py-4 col-span-2">
-<div class="mt-4 lg:mt-0">
+<div className="mt-4 lg:mt-0">
 <h4 className="font-semibold text-md text-gray-500 flex"> Card details</h4>
 <p className="text-base leading-relaxed text-gray-500 flex">Select default payment method</p>
  </div>
  </div>
 
-	<div class="w-[510px]  bg-white rounded-lg shadow-sm p-1 border flex flex-col sm:flex-row justify-between items-center mt-6 gap-2 sm:gap-0">
-		<div class="flex flex-col sm:flex-row justify-start items-center gap-4">
-			<div class="flex rounded-md bg-white py-2 px-2">
+	<div className="w-[510px]  bg-white rounded-lg shadow-sm p-1 border flex flex-col sm:flex-row justify-between items-center mt-6 gap-2 sm:gap-0">
+		<div className="flex flex-col sm:flex-row justify-start items-center gap-4">
+			<div className="flex rounded-md bg-white py-2 px-2">
                 <img src={Mastercardicon} alt='visa logo' />
             </div>
 			<div className="text-center sm:text-left">
@@ -98,11 +98,11 @@ const Settings = () => {
 	</div>
 </div>
 
-<div class="grid grid-cols-4">
+<div className="grid grid-cols-4">
   <div className="col-span-2">
  </div>
-	<div class="sm:flex-row sm:gap-0">
-	<div class=" pt-4 sm:flex-row">
+	<div className="sm:flex-row sm:gap-0">
+	<div className=" pt-4 sm:flex-row">
       <p className='ml-12 mt-2 text-gray-500 text-md'> + Add payment method</p> 
 		</div>
         

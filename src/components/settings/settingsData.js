@@ -12,27 +12,27 @@
         title: "Password",
       },
       {
-        id: 2,
+        id: 3,
         title: "Team",
       },
       {
-        id: 2,
+        id: 4,
         title: "Plan",
       },
       {
-        id: 2,
+        id: 5,
         title: "Billing",
       },
       {
-        id: 2,
+        id: 6,
         title: "Notifications",
       },
       {
-        id: 2,
+        id: 7,
         title: "Integrations",
       },
       {
-        id: 2,
+        id: 8,
         title: "API",
       },
 ]
