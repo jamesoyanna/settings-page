@@ -4,6 +4,8 @@ import VideoImage from '../../images/girl.png';
 import Playbutton from '../../images/Play-button.png';
 import Logo from '../../images/Logomark.png';
 import Avatar from '../../images/Avatar.png';
+import DashboardIcon from '../../images/Icon.png';
+import HomeIcon from '../../images/home-icon.png';
 import LogoutIcon from '../../images/logout-icon.png';
 import { SearchIcon } from '@heroicons/react/outline'
 
@@ -29,7 +31,19 @@ const Navbar = () => {
             <input type="text" className="w-full py-2 pl-10 pr-4 text-gray-700 bg-white border rounded-md dark:text-gray-300 dark:border-gray-300 focus:border-purple-400 dark:focus:border-purple-300 focus:ring-purple-300 focus:ring-opacity-40 focus:outline-none focus:ring" placeholder="Search"/>
         </div>
       {/* search end */}
-        <div className='space-y-8 w-full' >
+    <div className='space-y-8 w-full'>
+    <div className="w-full flex items-center justify-start space-x-4 px-5 py-2 cursor-pointer group hover:bg-gray-100 border-l-2 border-transparent transform rounded-md">
+    <img src={HomeIcon} alt="dahboard icon" className='h-5 w-4' />
+    <h1 className='text=gray-600 group-hover:text-black xl:flex hidden'>Home</h1>
+   </div>
+
+   <div className="w-full flex items-center justify-start space-x-4 px-5 py-2 cursor-pointer group hover:bg-gray-100 border-l-2 border-transparent transform rounded-md">
+   <img src={DashboardIcon} alt="dahboard icon" className='h-5 w-4' />
+    <h1 className='text=gray-600 group-hover:text-black xl:flex hidden'>Dashboard</h1>
+    <span class="flex items-center justify-center text-sm text-gray-500 font-semibold bg-gray-200 h-6 px-2 rounded-full ml-auto">10</span>
+   </div>
+
+
         {navLinks.slice(0,6).map((link) =>(
      <NavItem link={link} key={link.id} />
 ))}
@@ -72,6 +86,7 @@ const  NavItem = ({link}) => {
     <span>{link.icon}</span>
     <h1 className={`text=gray-600 group-hover:text-black xl:flex hidden ${ activeNavitem === link.id && "text-black"}`}>{link.title}</h1>
    </div>
+   
   )
 }
 

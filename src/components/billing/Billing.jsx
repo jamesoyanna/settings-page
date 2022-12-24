@@ -4,7 +4,7 @@ import DownloadIcon from '../../images/download.png'
 const Billing = () => {
   return (
     <div className="sm:px-6 w-full">
-                <div className="px-4 md:px-10 py-4 md:py-7">
+                <div className="px-4 md:px-1 py-4 md:py-7">
                     <div className="flex items-center justify-between">
                         <p className="focus:outline-none text-md font-bold leading-normal text-gray-500">Billing History</p>
                         <button className="py-3 px-4 flex items-center text-sm font-medium leading-none text-gray-600 bg-white border hover:bg-gray-300 cursor-pointer rounded">
@@ -27,7 +27,6 @@ const Billing = () => {
             <th className="px-8 align-middle py-6 text-left text-gray-400 text-sm"></th>
           </tr>
         </thead>
-
             <tbody>
                  <tr className="focus:outline-none h-16 border border-gray-100 rounded">
                                     <td>
