@@ -11,6 +11,9 @@ import { SearchIcon } from '@heroicons/react/outline'
 
 const Navbar = () => {
   return (
+    <div>
+    <div className="md:w-[250px]  h-[91%] hidden overflow-hidden md:flex flex-col items-center justify-between px-3">
+    <div>
     <nav className='col-span-2 border-r border-gray-320 min-h-[90vh] w-[80px] xl:w-[250px] pt-8 px-1 flex flex-col items-start justify-between'>
       {/* Logo */}
       <div className="px-6">
@@ -75,9 +78,11 @@ const Navbar = () => {
                 </div>
             </div>
     </nav>
+    </div>
+    </div>
+    </div>
   )
 }
-
 
 const  NavItem = ({link}) => {
   const [activeNavitem, setActiveNavitem] = useState(false);

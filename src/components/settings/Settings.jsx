@@ -3,12 +3,12 @@ import {settingsData} from './settingsData';
 import VisaLogo from '../../images/visa-logo.png';
 import Checkicon from '../../images/check.png';
 import Mastercardicon from '../../images/Mastercard.png';
+
 const Settings = () => {
   return (
     <div className="flex flex-col items-start">
     <h1 className="mb-2 font-bold text-lg text-gray-500"> Settings</h1>
     <p className="text-base leading-relaxed text-left text-gray-500"> Manage your team and preference here. </p>
-
     <ul className='flex mt-4'>
     {settingsData.map((item) =>(
         <li key={item.id} >
