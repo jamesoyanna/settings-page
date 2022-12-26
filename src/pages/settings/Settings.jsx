@@ -19,14 +19,14 @@ const Settings = () => {
         <div className="pt-6 px-3 w-[410px] h-full space-y-8 xl:w-full">
     <div className="flex flex-col items-start">
         <div>
-    <h1 className="mb-2 font-bold text-lg text-gray-500"> Settings</h1>
+    <h1 className="mb-2 font-semibold text-2xl text-gray-700"> Settings</h1>
     <p className="text-base leading-relaxed text-left text-gray-500"> Manage your team and preference here. </p>
     </div>
 
     <ul className='flex mt-4 w-full'>
     {settingsData.map((item) =>(
-        <li className='w-[100px] xl:w-full' key={item.id} >
-        <a href='/' className=' text-gray-500 border inline-block py-3 px-3 font-semibold'>{item.title}</a>
+        <li className='' key={item.id} >
+        <a href='/' className=' text-gray-500 border bg-white inline-block py-3 px-3 font-semibold'>{item.title}</a>
         </li>
     ))}
 </ul>
