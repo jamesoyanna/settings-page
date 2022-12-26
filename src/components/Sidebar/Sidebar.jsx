@@ -1,5 +1,6 @@
 import React from 'react'
-import { navLinks } from './navbarData';
+import {Link} from 'react-router-dom';
+import { navLinks } from './sidebarData';
 import VideoImage from '../../images/girl.png';
 import Playbutton from '../../images/Play-button.png';
 import Logo from '../../images/Logomark.png';
@@ -7,7 +8,8 @@ import Avatar from '../../images/Avatar.png';
 import DashboardIcon from '../../images/Icon.png';
 import HomeIcon from '../../images/home-icon.png';
 import LogoutIcon from '../../images/logout-icon.png';
-import { SearchIcon } from '@heroicons/react/outline'
+import { SearchIcon } from '@heroicons/react/outline';
+
 
 const Sidebar = () => {
   return (
@@ -86,10 +88,12 @@ const Sidebar = () => {
 
 const  NavItem = ({link}) => {
   return (
-    <div className= "w-full flex items-center justify-start space-x-4 px-5 cursor-pointer group hover:bg-gray-100 border-l-2 border-transparent transform rounded-md"  key={link.id} >
+    <Link to="/settings">
+    <div className= "w-full flex items-center justify-start space-x-4 px-5 py-3 cursor-pointer group hover:bg-gray-100 border-l-2 border-transparent transform rounded-md"  key={link.id} >
     <span>{link.icon}</span>
     <h1 className="text=gray-600 xl:flex hidden text-black">{link.title}</h1>
    </div>
+   </Link>
    
   )
 }

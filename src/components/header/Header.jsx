@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { navLinks } from '../Navbar/navbarData';
+import { navLinks } from '../Sidebar/sidebarData';
 import VideoImage from '../../images/girl.png';
 import Playbutton from '../../images/Play-button.png';
 import Logo from '../../images/Logomark.png';

@@ -4,9 +4,19 @@ import VisaLogo from '../../images/visa-logo.png';
 import Checkicon from '../../images/check.png';
 import Mastercardicon from '../../images/Mastercard.png';
 import EnvelopeIcon from '../../images/envelope.png';
+import Header from '../../components/header/Header';
+import Sidebar from '../../components/Sidebar/Sidebar';
+import Billing from '../../components/billing/Billing';
 
 const Settings = () => {
   return (
+    <div className="app h-screen overflow-y-scroll scrollbar-hide overflow-x-hidden px-6">
+      <Header />
+      <div className="flex items-start space-x-2 justify-start w-full ">
+        <Sidebar />
+        <div className=" w-full h-[90vh] space-x-4 items-center justify-center grid grid-cols-2 xl:grid-cols-3">
+      <div className=" items-center justify-center flex flex-col col-span-12 h-full   py-2 px-3 w-full space-y-4">
+        <div className="pt-6 px-3 w-[410px] h-full space-y-8 xl:w-full">
     <div className="flex flex-col items-start">
         <div>
     <h1 className="mb-2 font-bold text-lg text-gray-500"> Settings</h1>
@@ -105,6 +115,15 @@ const Settings = () => {
       <p className='xl:ml-16 mt-4 text-gray-500 text-md xl:px-5 cursor-pointer'> + Add payment method</p> 
 		</div>
 </div>
+
+</div>
+
+</div>
+<Billing />
+</div>
+</div>
+</div>
+
 </div>
   )
 }

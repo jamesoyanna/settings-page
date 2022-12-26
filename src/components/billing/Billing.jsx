@@ -23,7 +23,7 @@ const billingData = [
 
 const Billing = () => {
   return (
-    <div className="sm:px-6 w-full">
+    <div className="sm:px-6 w-[400px] xl:w-full">
                 <div className="md:px-1">
                 <div className="xl:justify-between mb-6 md:flex">
                         <p className="text-md font-semibold text-gray-600">Billing History</p>
@@ -115,4 +115,4 @@ const Billing = () => {
             
   )
 }
-export default Billing
+export default Billing;
