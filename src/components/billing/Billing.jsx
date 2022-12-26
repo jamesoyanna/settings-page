@@ -1,6 +1,7 @@
 import React from 'react'
 import DownloadIcon from '../../images/download.png'
 import ArrowIcon from '../../images/arrow-icon.png'
+import CheckIcon from '../../images/check-icon.png'
 
 const billingData = [
     {
@@ -19,6 +20,14 @@ const billingData = [
         id: 4,
         status: "Paid",
       },
+      {
+        id: 5,
+        status: "Paid",
+      },
+      {
+        id: 6,
+        status: "Paid",
+      },
     ]
 
 const Billing = () => {
@@ -33,7 +42,7 @@ const Billing = () => {
                         </button>
                     </div>
                 </div>
-                <div className="bg-white border rounded-lg">
+                <div className="bg-white border rounded-lg shadw-md">
                     <div className="overflow-x-auto">
                         <table className="w-full whitespace-nowrap">
             <thead >
@@ -81,12 +90,13 @@ const Billing = () => {
                                     </td>
 
                                     <td className="px-4 py-5 border-b border-gray-200 bg-white text-sm">
-									<span
-                                        className="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
-                                        <span
-                                            className="absolute inset-0 bg-green-200 opacity-50 rounded-full"></span>
-									<span className="relative text-green-600">Paid</span>
-									</span>
+									<div className="relative inline-block px-3 py-1 font-semibold leading-tight">
+                                        <div className="absolute opacity-100 bg-green-100 py-1 px-6 rounded-full flex">
+                                     <img className='h-3 w-3 text-green-700' src={CheckIcon} alt='check icon' /> 
+									<span className="relative text-green-700 ml-2">Paid
+                                    </span>
+                                    </div>
+									</div>
 								</td>
 
                                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
