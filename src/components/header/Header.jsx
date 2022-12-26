@@ -17,7 +17,6 @@ import {
   DrawerCloseButton,
 } from "@chakra-ui/react";
 
-
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -40,7 +39,6 @@ function Header() {
          />
       )}
 
-{/* start */}
  {/* small-screens navbar */}
  <div className="md:w-[250px] h-[91%] overflow-hidden md:flex flex-col items-center justify-between px-3">
         <Drawer
@@ -52,10 +50,9 @@ function Header() {
           <DrawerContent>
             <DrawerCloseButton />
             <DrawerBody className="overflow-y-scroll scrollbar-hide">
-              <div className="md:w-[250px] h-fit  md:flex flex-col items-center justify-between space-y-24 px-3">
+              <div>
                {/* start */}
-
-               <nav className='col-span-2 border-r border-gray-320 min-h-[90vh] w-[80px] xl:w-[250px] pt-8 px-1 flex flex-col items-start justify-between'>
+               <nav>
       {/* Logo */}
       <div className="px-6">
             <a href="/" className="inline-flex space-x-2 items-center">
@@ -78,12 +75,12 @@ function Header() {
     <div className='space-y-8 w-full'>
     <div className="w-full flex items-center justify-start space-x-4 px-5 py-2 cursor-pointer group hover:bg-gray-100 border-l-2 border-transparent transform rounded-md">
     <img src={HomeIcon} alt="dahboard icon" className='h-5 w-4' />
-    <h1 className='text=gray-600 group-hover:text-black xl:flex hidden'>Home</h1>
+    <h1 className='text=gray-600 group-hover:text-black xl:flex '>Home</h1>
    </div>
 
    <div className="w-full flex items-center justify-start space-x-4 px-5 py-2 cursor-pointer group hover:bg-gray-100 border-l-2 border-transparent transform rounded-md">
    <img src={DashboardIcon} alt="dahboard icon" className='h-5 w-4' />
-    <h1 className='text=gray-600 group-hover:text-black xl:flex hidden'>Dashboard</h1>
+    <h1 className='text=gray-600 group-hover:text-black xl:flex'>Dashboard</h1>
     <span className="flex items-center justify-center text-sm text-gray-500 font-semibold bg-gray-200 h-6 px-2 rounded-full ml-auto">10</span>
    </div>
 
@@ -145,13 +142,11 @@ function Header() {
 
 
 const  NavItem = ({link}) => {
-  const [activeNavitem, setActiveNavitem] = useState(false);
   return (
-    <div onClick={()=> setActiveNavitem(link.id) } className= {`w-full flex items-center justify-start space-x-4 px-5 py-2 cursor-pointer group hover:bg-gray-100 border-l-2 border-transparent transform rounded-md ${ activeNavitem === link.id && "bg-gray-200"}`}  key={link.id} >
+    <div  className= "w-full flex items-center justify-start space-x-3 cursor-pointer group hover:bg-gray-100 border-l-2 border-transparent transform rounded-md" key={link.id} >
     <span>{link.icon}</span>
-    <h1 className={`text=gray-600 group-hover:text-black xl:flex hidden ${ activeNavitem === link.id && "text-black"}`}>{link.title}</h1>
+    <h1 className="text=gray-600 group-hover:text-black xl:flex text-black">{link.title}</h1>
    </div>
-   
   )
 }
 
