@@ -42,7 +42,7 @@ const Billing = () => {
                         </button>
                     </div>
                 </div>
-                <div className="bg-white border rounded-lg shadw-md">
+                <div className="bg-white border rounded-lg shadow-lg pb-10">
                     <div className="overflow-x-auto">
                         <table className="w-full whitespace-nowrap">
             <thead >
@@ -106,6 +106,7 @@ const Billing = () => {
                 <img src="https://demos.creative-tim.com/notus-js/assets/img/team-3-800x800.jpg" alt="..." className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4" />
                 <img src="https://demos.creative-tim.com/notus-js/assets/img/team-4-470x470.png" alt="..." className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4" />
                 <img src="https://demos.creative-tim.com/notus-js/assets/img/team-4-470x470.png" alt="..." className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4" />
+                <span className='font-bold text-base text-gray-500 border rounded-full h-7 w-7 bg-gray-100'>+2</span>
               </div>
             </td>
             <td>
@@ -113,10 +114,6 @@ const Billing = () => {
             </td>
              </tr>
               ))}
-
-             {/* table row */}
-             
-
             </tbody>
         </table>
     </div>
