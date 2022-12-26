@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import {Link} from 'react-router-dom';
 import { navLinks } from '../Sidebar/sidebarData';
 import VideoImage from '../../images/girl.png';
 import Playbutton from '../../images/Play-button.png';
@@ -22,6 +23,7 @@ function Header() {
   return (
     <div className="md:hidden flex w-[380px] border-2 py-1 border-gray-300 p-3">
       <div className="w-full flex md:space-x-2 md:pb-6 pb-3 justify-start md:justify-start">
+      <Link to="/">
         <img
           className="md:w-12 md:h-12 w-10 h-10"
           src={Logo}
@@ -30,6 +32,7 @@ function Header() {
         <span className="text-lg font-bold mt-2">
         Untitled UI
         </span>
+        </Link>
         </div>
 
         {!isOpen && (
@@ -75,11 +78,15 @@ function Header() {
     <div className='space-y-8 w-full'>
     <div className="w-full flex justify-start space-x-4 px- py-2 cursor-pointer group hover:bg-gray-100 border-transparent transform rounded-md">
     <img src={HomeIcon} alt="dahboard icon" className='h-5 w-4' />
+    <Link to="/settings">
     <h1 className='text=gray-600 group-hover:text-black xl:flex '>Home</h1>
+    </Link>
    </div>
    <div className="w-full flex items-center space-x-4 cursor-pointer group hover:bg-gray-100 border-l-2 border-transparent transform rounded-md">
    <img src={DashboardIcon} alt="dahboard icon" className='h-5 w-4' />
+   <Link to="/settings">
     <h1 className='text=gray-600 group-hover:text-black xl:flex'>Dashboard</h1>
+    </Link>
     <span className="flex items-center justify-center text-sm text-gray-500 font-semibold bg-gray-200 h-6 px-2 rounded-full ml-auto">10</span>
    </div>
         {navLinks.slice(0,6).map((link) =>(
@@ -142,7 +149,9 @@ const  NavItem = ({link}) => {
   return (
     <div  className= "w-full flex items-center justify-start space-x-3 cursor-pointer group hover:bg-gray-100 border-l-2 border-transparent transform rounded-md" key={link.id} >
     <span>{link.icon}</span>
+    <Link to="/settings">
     <h1 className="text=gray-600 group-hover:text-black xl:flex text-black">{link.title}</h1>
+    </Link>
    </div>
   )
 }
