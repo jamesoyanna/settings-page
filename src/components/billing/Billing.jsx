@@ -5,28 +5,30 @@ import ArrowIcon from '../../images/arrow-icon.png'
 const Billing = () => {
   return (
     <div className="sm:px-6 w-full">
-        <div className="xl:justify-between mb-6 md:flex">
-            <p className="text-md font-semibold text-gray-600">Billing history</p>
-            <button className="mt-4 xl:m-0 py-2 px-3 flex text-sm font-medium text-gray-600 bg-white border cursor-pointer rounded-lg">
-            <img src={DownloadIcon} alt='download icon' className='mr-3' />
-            Download All
-            </button>
-    </div>
-    <div className="bg-white border rounded-lg">
-        <div className="overflow-x-auto">
-            <table className="w-full whitespace-nowrap">
-            <thead>
-          <tr className='border bg-gray-100'>
-          <input placeholder="checkbox" type="checkbox" className=" h-4 w-4" />
-            <th className="flex items-center px-8 align-middle py-6 text-left text-gray-500 text-md font-normal">Invoice
-            <img className='ml-2 bg-red' src={ArrowIcon} alt='arrow icon' />
+                <div className="md:px-1">
+                <div className="xl:justify-between mb-6 md:flex">
+                        <p className="text-md font-semibold text-gray-600">Billing History</p>
+                        <button className="mt-4 xl:m-0 py-2 px-3 flex text-sm font-medium text-gray-600 bg-white border cursor-pointer rounded-lg">
+                        <img src={DownloadIcon} alt='donload icon' className='mr-3' />
+                        Download All
+                        </button>
+                    </div>
+                </div>
+                <div className="bg-white border rounded-lg">
+                    <div className="overflow-x-auto">
+                        <table className="w-full whitespace-nowrap">
+            <thead >
+            <tr className='bg-gray-100 border'>
+            
+            <th className="px-8 align-middle py-6 text-left text-gray-400 text-sm"></th>
+            <th className="flex items-center px-8 align-middle py-6 text-left text-gray-400 text-sm">Invoice
+            <img className='ml-2' src={ArrowIcon} alt='arrow icon' />
             </th>
-            <th className="px-8 align-middle py-6 text-left text-gray-500 text-md font-normal">Amount</th>
-             <input placeholder="checkbox" type="checkbox" className="focus:opacity-100 checkbox opacity-0 absolute cursor-pointer w-full h-full" />
-            <th className="px-8 align-middle py-6 text-left text-gray-500 text-md font-normal">Date</th>
-            <th className="px-8 align-middle py-6 text-left text-gray-500 text-md font-normal">Status</th>
-            <th className="px-8 align-middle py-6 text-left text-gray-500 text-md font-normal">Users on plan</th>
-            <th className="px-8 align-middle py-6 text-left text-gray-500 text-md"></th>
+                <th className="px-8 align-middle py-6 text-left text-gray-400 text-sm">Amount</th>
+                <th className="px-8 align-middle py-6 text-left text-gray-400 text-sm">Date</th>
+                <th className="px-8 align-middle py-6 text-left text-gray-400 text-sm">Status</th>
+                <th className="px-8 align-middle py-6 text-left text-gray-400 text-sm">Users on plan</th>
+                <th className="px-8 align-middle py-6 text-left text-gray-400 text-sm"></th>
           </tr>
         </thead>
             <tbody>
