@@ -12,9 +12,10 @@ const Settings = () => {
     <h1 className="mb-2 font-bold text-lg text-gray-500"> Settings</h1>
     <p className="text-base leading-relaxed text-left text-gray-500"> Manage your team and preference here. </p>
     </div>
-    <ul className='flex mt-4'>
+
+    <ul className='flex mt-4 w-full'>
     {settingsData.map((item) =>(
-        <li className='w-[100px] xl:w-full ' key={item.id} >
+        <li className='w-[100px] xl:w-full' key={item.id} >
         <a href='/' className=' text-gray-500 border inline-block py-3 px-3 font-semibold'>{item.title}</a>
         </li>
     ))}

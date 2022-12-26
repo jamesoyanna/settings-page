@@ -20,14 +20,14 @@ import {
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="md:hidden flex w-[365px]">
-      <div className="border border-gray-200 w-full flex md:space-x-2 md:pb-6 pb-2 justify-start md:justify-start">
+    <div className="md:hidden flex w-[380px] border-2 py-1 border-gray-300 p-3">
+      <div className="w-full flex md:space-x-2 md:pb-6 pb-3 justify-start md:justify-start">
         <img
           className="md:w-12 md:h-12 w-10 h-10"
           src={Logo}
           alt="logo"
         />
-        <span className="text-lg font-bold mt-3 mr-2">
+        <span className="text-lg font-bold mt-2">
         Untitled UI
         </span>
         </div>
@@ -40,7 +40,7 @@ function Header() {
       )}
 
  {/* small-screens navbar */}
- <div className="md:w-[250px] h-[91%] overflow-hidden md:flex flex-col items-center justify-between px-3">
+ <div className="md:w-[250px] h-[91%] overflow-hidden md:flex flex-col items-center justify-between px-3 bg-white">
         <Drawer
           isOpen={isOpen}
           placement="left"
@@ -54,10 +54,10 @@ function Header() {
                {/* start */}
                <nav>
       {/* Logo */}
-      <div className="px-6">
+      <div>
             <a href="/" className="inline-flex space-x-2 items-center">
                 <span>
-                    <img className="full w-8 h-8" src={Logo} alt="logo" />
+                    <img className="w-10 h-10" src={Logo} alt="logo" />
                 </span>
                 <span className="text-lg font-bold">
                     Untitled UI
@@ -66,25 +66,22 @@ function Header() {
            </div>
       {/* search box */}
       <div className="relative mt-2 pb-2 px-4">
-            <span className="absolute inset-y-0 left-0 flex items-center pl-7">
-                <SearchIcon className='w-5 h-5 text-gray-400'  />
+            <span className="absolute inset-y-0 left-1 flex items-center pl-6">
+                <SearchIcon className='w-5 h-5 text-gray-400 mb-2'/>
             </span>
-            <input type="text" className="w-full py-2 pl-10 pr-4 text-gray-700 bg-white border rounded-md dark:text-gray-300 dark:border-gray-300 focus:border-purple-400 dark:focus:border-purple-300 focus:ring-purple-300 focus:ring-opacity-40 focus:outline-none focus:ring" placeholder="Search"/>
+            <input type="text" className="w-full py-1 pl-10 text-gray-700 bg-white border rounded-md dark:border-gray-300 focus:border-purple-400 dark:focus:border-purple-300 focus:ring-purple-300 focus:ring-opacity-40 focus:outline-none focus:ring" placeholder="Search"/>
         </div>
       {/* search end */}
     <div className='space-y-8 w-full'>
-    <div className="w-full flex items-center justify-start space-x-4 px-5 py-2 cursor-pointer group hover:bg-gray-100 border-l-2 border-transparent transform rounded-md">
+    <div className="w-full flex justify-start space-x-4 px- py-2 cursor-pointer group hover:bg-gray-100 border-transparent transform rounded-md">
     <img src={HomeIcon} alt="dahboard icon" className='h-5 w-4' />
     <h1 className='text=gray-600 group-hover:text-black xl:flex '>Home</h1>
    </div>
-
-   <div className="w-full flex items-center justify-start space-x-4 px-5 py-2 cursor-pointer group hover:bg-gray-100 border-l-2 border-transparent transform rounded-md">
+   <div className="w-full flex items-center space-x-4 cursor-pointer group hover:bg-gray-100 border-l-2 border-transparent transform rounded-md">
    <img src={DashboardIcon} alt="dahboard icon" className='h-5 w-4' />
     <h1 className='text=gray-600 group-hover:text-black xl:flex'>Dashboard</h1>
     <span className="flex items-center justify-center text-sm text-gray-500 font-semibold bg-gray-200 h-6 px-2 rounded-full ml-auto">10</span>
    </div>
-
-
         {navLinks.slice(0,6).map((link) =>(
      <NavItem link={link} key={link.id} />
 ))}
@@ -93,8 +90,8 @@ function Header() {
   <NavItem link={link} key={link.id} />
 ))}
  </div>
-<div className='xl:flex hidden flex-col items-center justify-center space-y-4 p-4'>
-  <h1 className='text-md w-full font-medium'>New features available !</h1>
+<div className='xl:flex flex-col items-center justify-center space-y-2 border pl-6 pb-4 bg-gray-100 rounded'>
+  <h1 className='text-md w-full font-medium mt-4 ml-6'>New features available !</h1>
   <p className='text-gray-500'>Check  out the new dashboard view. Pages now load fast.</p>
   <div className='relative'>
 <img className="max-w-lg h-auto rounded-lg" src={VideoImage} alt="video paceholder" />
