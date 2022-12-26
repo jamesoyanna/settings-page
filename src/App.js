@@ -11,7 +11,7 @@ function App() {
         <Navbar />
         <div className=" w-full h-[90vh] space-x-4 items-center justify-center grid grid-cols-2 xl:grid-cols-3">
       <div className=" items-center justify-center flex flex-col col-span-12 h-full   py-2 px-3 w-full space-y-4">
-        <div className="pt-10 px-3 w-full h-full space-y-8">
+        <div className="pt-6 px-3 w-[410px] h-full space-y-8 xl:w-full">
         <Settings />
        <Billing />
         </div>

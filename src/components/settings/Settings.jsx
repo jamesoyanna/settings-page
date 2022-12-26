@@ -3,37 +3,38 @@ import {settingsData} from './settingsData';
 import VisaLogo from '../../images/visa-logo.png';
 import Checkicon from '../../images/check.png';
 import Mastercardicon from '../../images/Mastercard.png';
+import EnvelopeIcon from '../../images/envelope.png';
 
 const Settings = () => {
   return (
     <div className="flex flex-col items-start">
+        <div>
     <h1 className="mb-2 font-bold text-lg text-gray-500"> Settings</h1>
     <p className="text-base leading-relaxed text-left text-gray-500"> Manage your team and preference here. </p>
+    </div>
     <ul className='flex mt-4'>
     {settingsData.map((item) =>(
-        <li key={item.id} >
-        <a href='/' className=' text-gray-500 border inline-block py-2 px-5 font-semibold'>{item.title}</a>
+        <li className='w-[100px] xl:w-full ' key={item.id} >
+        <a href='/' className=' text-gray-500 border inline-block py-3 px-3 font-semibold'>{item.title}</a>
         </li>
     ))}
 </ul>
 
-<div className='col-span-3 items-start justify-start flex flex-col w-full pt-4 mb-6'>
-<h3 className="py-3 font-semibold text-lg text-gray-600"> Payment Method</h3>
-<p className="text-base leading-relaxed text-left text-gray-500">Update your billing details and address</p>
+<div className='col-span-3 items-start justify-start flex flex-col pt-4 mb-6'>
+<h3 className="py-2 font-semibold text-lg text-gray-600"> Payment Method</h3>
+<p className="text-base text-gray-500">Update your billing details and address</p>
 </div>
 
-
-<div className="grid grid-cols-4 border-t">
-  <div className="py-4 col-span-2">
-<div className="mt-4 lg:w-1/2 lg:mt-0">
+ {/* contact email */}
+<div className="grid border-t xl:grid-cols-4 w-full mb-4">
+  <div className="col-span-2">
+<div className="mt-4 lg:mt-0">
 <h4 className="font-semibold text-md text-gray-500 flex"> Contact Email</h4>
 <p className="text-base leading-relaxed text-gray-500 flex">Where should invoice be sent ?</p>
  </div>
  </div>
-
- 
-<div className="px-2 py-4">
-<div className="flex pt-4 lg:w-full lg:mt-0">
+<div>
+<div className=" flex pt-4 lg:w-full lg:mt-0">
 <input type="radio" className="h-4 w-4 text-purple-500 mr-3 mt-1" />
 <p className="text-gray-700 text-base font-medium leading-none">Send to my account email</p>
 </div>
@@ -42,11 +43,35 @@ const Settings = () => {
 <input type="radio" className="h-4 w-4 text-purple-500 mr-3 mt-1" />
 <p className="text-gray-700">Send to an alternative email</p>
 </div>
-<div className="bg-white border border-slate-10 h-2 pb-8 shadow-sm rounded-md pt-1 p-6 mt-6 flex flex-col w-[350px] mx-auto items-start">
-    <h1 className="text-base font-semibold text-gray-600">billing@untitledui.com</h1>
+<div className="bg-white border border-slate-10 h-2 pb-8 shadow-sm rounded-md pt-1 p-4 mt-6 flex w-[350px]">
+<div className="flex pt-">
+   <img className='h-4 w-5 mr-2 mt-1' src={EnvelopeIcon} alt='envelope' /> 
+    <span className="text-base font-semibold text-gray-600">billing@untitledui.com</span>
+    </div>
 	</div>
  </div>
  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 
  {/* Visa Card details */}
