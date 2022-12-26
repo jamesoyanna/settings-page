@@ -100,8 +100,8 @@ const Settings = () => {
 <div className="grid grid-cols-1 xl:grid-cols-4">
   <div className="col-span-2">
  </div>
-	<div className="sm:flex-row">
-      <p className='xl:ml-16 mt-4 text-gray-500 text-md px-1 cursor-pointer'> + Add payment method</p> 
+	<div className=" sm:flex-row">
+      <p className='xl:ml-16 mt-4 text-gray-500 text-md px-5 cursor-pointer'> + Add payment method</p> 
 		</div>
 </div>
 </div>

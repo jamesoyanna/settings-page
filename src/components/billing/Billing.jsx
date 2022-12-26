@@ -21,14 +21,14 @@ const Billing = () => {
             <tr className='bg-gray-100 border'>
             
             <th className="px-8 align-middle py-6 text-left text-gray-400 text-sm"></th>
-            <th className="flex items-center px-8 align-middle py-6 text-left text-gray-400 text-sm">Invoice
+            <th className="flex items-center px-8 align-middle py-6 text-left text-gray-500 text-md font-normal">Invoice
             <img className='ml-2' src={ArrowIcon} alt='arrow icon' />
             </th>
-                <th className="px-8 align-middle py-6 text-left text-gray-400 text-sm">Amount</th>
-                <th className="px-8 align-middle py-6 text-left text-gray-400 text-sm">Date</th>
-                <th className="px-8 align-middle py-6 text-left text-gray-400 text-sm">Status</th>
-                <th className="px-8 align-middle py-6 text-left text-gray-400 text-sm">Users on plan</th>
-                <th className="px-8 align-middle py-6 text-left text-gray-400 text-sm"></th>
+                <th className="px-8 align-middle py-6 text-left text-gray-500 text-md font-normal">Amount</th>
+                <th className="px-8 align-middle py-6 text-left text-gray-500 text-md font-normal">Date</th>
+            <th className="px-8 align-middle py-6 text-left text-gray-500 text-md font-normal">Status</th>
+            <th className="px-8 align-middle py-6 text-left text-gray-500 text-md font-normal">Users on plan</th>
+            <th className="px-8 align-middle py-6 text-left text-gray-500 text-md"></th>
           </tr>
         </thead>
             <tbody>
