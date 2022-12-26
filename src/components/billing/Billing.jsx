@@ -2,6 +2,25 @@ import React from 'react'
 import DownloadIcon from '../../images/download.png'
 import ArrowIcon from '../../images/arrow-icon.png'
 
+const billingData = [
+    {
+        id: 0,
+        invoice: "Basic Plan - Dec 2022",
+      },
+      {
+        id: 2,
+        amount: "USD $10.00",
+      },
+      {
+        id: 3,
+        amount: "19th Dec, 2022",
+      },
+      {
+        id: 4,
+        status: "Paid",
+      },
+    ]
+
 const Billing = () => {
   return (
     <div className="sm:px-6 w-full">
@@ -19,8 +38,7 @@ const Billing = () => {
                         <table className="w-full whitespace-nowrap">
             <thead >
             <tr className='bg-gray-100 border'>
-            
-            <th className="px-8 align-middle py-6 text-left text-gray-400 text-sm"></th>
+            <th><input className='w-4 h-4' placeholder="checkbox" type="checkbox" /></th>
             <th className="flex items-center px-8 align-middle py-6 text-left text-gray-500 text-md font-normal">Invoice
             <img className='ml-2' src={ArrowIcon} alt='arrow icon' />
             </th>
@@ -32,7 +50,10 @@ const Billing = () => {
           </tr>
         </thead>
             <tbody>
-                 <tr className="focus:outline-none h-16 border border-gray-100 rounded">
+                {billingData.map((billing)=>(
+
+               
+                 <tr key={billing.id} className="focus:outline-none h-16 border border-gray-100 rounded">
                                     <td>
                                         <div className="ml-5">
                                             <div className="bg-white border-2 rounded-md w-5 h-5 flex flex-shrink-0 justify-center items-center relative">
@@ -42,7 +63,7 @@ const Billing = () => {
                                     </td>
 
 
-                                    <td className="">
+                                    <td>
                                         <div className="flex items-center pl-5">
                                             <p className="text-base font-medium leading-none text-gray-700 mr-2">Basic Plan - Dec 2022</p>
                                         </div>
@@ -53,7 +74,7 @@ const Billing = () => {
                                             <p className="text-base font-medium leading-none text-gray-700 mr-2 px-3">USD $10.00</p>
                                         </div>
                                     </td>
-                                    <td className="">
+                                    <td>
                                         <div className="flex items-center pl-5">
                                             <p className="text-base font-medium leading-none text-gray-700 mr-2 px-3">19th Dec, 2022</p>
                                         </div>
@@ -81,52 +102,11 @@ const Billing = () => {
             <img src={DownloadIcon}  alt="download icon" className="w-5 h-5 ml-6" />  
             </td>
              </tr>
+              ))}
 
-            <tr className="h-3"></tr>
              {/* table row */}
-             <tr className="focus:outline-none h-16 border border-gray-100 rounded">
-                                    <td>
-                                        <div className="ml-5">
-                                            <div className="bg-white border-2 rounded-md w-5 h-5 flex flex-shrink-0 justify-center items-center relative">
-                                                <input placeholder="checkbox" type="checkbox" className="focus:opacity-100 checkbox opacity-0 absolute cursor-pointer w-full h-full" />
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td className="">
-                                        <div className="flex items-center pl-5">
-                                            <p className="text-base font-medium leading-none text-gray-700 mr-2">Basic Plan - Dec 2022</p>
-                                        </div>
-                                    </td>
+             
 
-                                    <td className="">
-                                        <div className="flex items-center pl-5">
-                                            <p className="text-base font-medium leading-none text-gray-700 mr-2 px-3">USD $10.00</p>
-                                        </div>
-                                    </td>
-                                    <td className="">
-                                        <div className="flex items-center pl-5">
-                                            <p className="text-base font-medium leading-none text-gray-700 mr-2 px-3">Nov 1, 2022</p>
-                                        </div>
-                                    </td>
-
-                                    <td className="px-4 py-5 border-b border-gray-200 bg-white text-sm">
-									<span
-                                        className="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
-                                        <span
-                                            className="absolute inset-0 bg-green-200 opacity-50 rounded-full"></span>
-									<span className="relative text-green-600">Paid</span>
-									</span>
-								</td>
-
-                                <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-              <div className="flex">
-                <img src="https://demos.creative-tim.com/notus-js/assets/img/team-1-800x800.jpg" alt="..." className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow" />
-                <img src="https://demos.creative-tim.com/notus-js/assets/img/team-2-800x800.jpg" alt="..." className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4" />
-                <img src="https://demos.creative-tim.com/notus-js/assets/img/team-3-800x800.jpg" alt="..." className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4" />
-                <img src="https://demos.creative-tim.com/notus-js/assets/img/team-4-470x470.png" alt="..." className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4" />
-              </div>
-            </td>
-             </tr>
             </tbody>
         </table>
     </div>
