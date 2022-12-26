@@ -64,7 +64,7 @@ const Settings = () => {
 			<div className="flex rounded-md bg-white py-2 px-2">
                 <img src={VisaLogo} alt='visa logo' />
             </div>
-			<div className="text-center sm:text-left">
+			<div className="sm:text-left">
 				<p className="text-purple-700 text-sm font-semibold">Visa ending in 1234</p>
 				<p className="text-purple-500 text-sm">Expiry 06/2024</p>
                 <p className="text-purple-500 text-sm pt-1">Set as default <span className='text-purple-700 px-2 font-semibold'>Edit</span></p>
@@ -82,12 +82,12 @@ const Settings = () => {
 <p className="text-base leading-relaxed text-gray-500 ">Select default payment method</p>
  </div>
  <div className="col-span-2">
- <div className="bg-purple-50 rounded-lg shadow-sm p-4 border border-purple-500 flex sm:flex-row justify-between items-center mt-2 sm:gap-0 mr-2 xl:mt-4">
+ <div className="bg-white rounded-lg shadow-sm p-4 border flex sm:flex-row justify-between items-center mt-2 sm:gap-0 mr-2 xl:mt-4">
 		<div className="flex sm:flex-row items-center gap-4">
 			<div className="flex rounded-md bg-white py-2 px-2">
             <img src={Mastercardicon} alt='master card logo' />
             </div>
-			<div className="text-center sm:text-left">
+			<div className="sm:text-left">
 				<p className="text-gray-600 text-sm font-semibold">Mastercard ending in 1234</p>
 				<p className="text-gray-500 text-sm">Expiry 06/2024</p>
                 <p className="text-gray-600 text-sm pt-1">Set as default <span className='text-purple-700 px-2 font-semibold'>Edit</span></p>
@@ -98,15 +98,14 @@ const Settings = () => {
  </div>
  </div>
 
-<div className="grid grid-cols-4">
+<div className="grid grid-cols-1 xl:grid-cols-4">
   <div className="col-span-2">
  </div>
-	<div className="sm:flex-row sm:gap-0">
-	<div className=" pt-4 sm:flex-row">
-      <p className='ml-12 mt-2 text-gray-500 text-md'> + Add payment method</p> 
+	<div className="sm:flex-row">
+      <p className='xl:ml-16 mt-4 text-gray-500 text-md px-1 cursor-pointer'> + Add payment method</p> 
 		</div>
         
-	</div>
+
 </div>
 </div>
   )
