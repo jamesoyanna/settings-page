@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { navLinks } from './navbarData';
 import VideoImage from '../../images/girl.png';
 import Playbutton from '../../images/Play-button.png';
@@ -9,7 +9,7 @@ import HomeIcon from '../../images/home-icon.png';
 import LogoutIcon from '../../images/logout-icon.png';
 import { SearchIcon } from '@heroicons/react/outline'
 
-const Navbar = () => {
+const Sidebar = () => {
   return (
     <div>
     <div className="md:w-[250px] h-[91%] hidden overflow-hidden md:flex flex-col items-center justify-between px-3 bg-white">
@@ -94,4 +94,4 @@ const  NavItem = ({link}) => {
   )
 }
 
-export default Navbar;
+export default Sidebar;
