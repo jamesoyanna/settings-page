@@ -53,38 +53,16 @@ const Settings = () => {
  </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
- {/* Visa Card details */}
- <div className="grid grid-cols-4 border-t">
-  <div className="py-4 col-span-2">
-<div className="mt-4 lg:mt-0">
+{/* Visa Card details */}
+ <div className="grid border-t xl:grid-cols-4 w-full mb-4">
+  <div className="col-span-2">
+  <div className="mt-4">
 <h4 className="font-semibold text-md text-gray-500 flex"> Card details</h4>
 <p className="text-base leading-relaxed text-gray-500 flex">Select default payment method</p>
  </div>
- </div>
 
-	<div className="w-[510px]  bg-purple-50 rounded-lg shadow-sm p-1 border border-purple-500 flex flex-col sm:flex-row justify-between items-center mt-6 gap-2 sm:gap-0">
-		<div className="flex flex-col sm:flex-row justify-start items-center gap-4">
+ <div className="bg-purple-50 rounded-lg shadow-sm p-4 border border-purple-500 flex sm:flex-row justify-between items-center mt-4 sm:gap-0 mr-2 lg:col-span">
+		<div className="flex sm:flex-row items-center gap-4">
 			<div className="flex rounded-md bg-white py-2 px-2">
                 <img src={VisaLogo} alt='visa logo' />
             </div>
@@ -95,23 +73,23 @@ const Settings = () => {
 			</div>
 		</div>
         <img src={Checkicon} alt='check icon' className="bg-purple-600 h-4 w-4 py-1 px-1 rounded-lg mb-9 mr-2" />
-	</div>
-</div>
+ </div>
+ </div>
+ </div>
 
-{/* Mater Card details */}
 
-<div className="grid grid-cols-4 border-t">
-  <div className="py-4 col-span-2">
-<div className="mt-4 lg:mt-0">
+
+{/* Master Card details */}
+<div className="grid border-t xl:grid-cols-4 w-full mb-4">
+  <div className="col-span-2">
+  <div className="mt-4 lg:mt-0">
 <h4 className="font-semibold text-md text-gray-500 flex"> Card details</h4>
 <p className="text-base leading-relaxed text-gray-500 flex">Select default payment method</p>
  </div>
- </div>
-
-	<div className="w-[510px]  bg-white rounded-lg shadow-sm p-1 border flex flex-col sm:flex-row justify-between items-center mt-6 gap-2 sm:gap-0">
-		<div className="flex flex-col sm:flex-row justify-start items-center gap-4">
+ <div className=" bg-white rounded-lg shadow-sm p-4 border flex sm:flex-row justify-between items-center mt-4 sm:gap-0 mr-2">
+		<div className="flex sm:flex-row items-center gap-4">
 			<div className="flex rounded-md bg-white py-2 px-2">
-                <img src={Mastercardicon} alt='visa logo' />
+            <img src={Mastercardicon} alt='master card logo' />
             </div>
 			<div className="text-center sm:text-left">
 				<p className="text-gray-600 text-sm font-semibold">Mastercard ending in 1234</p>
@@ -119,9 +97,11 @@ const Settings = () => {
                 <p className="text-gray-600 text-sm pt-1">Set as default <span className='text-purple-700 px-2 font-semibold'>Edit</span></p>
 			</div>
 		</div>
-        <img src={Checkicon} alt='check icon' className="bg-white h-4 w-4 py-1 px-1 border-2 rounded-lg mb-9 mr-2" />
+        <input type="radio" className="h-4 w-4 px-1 py-1 mb-9 mr-2" />
 	</div>
-</div>
+ </div>
+ </div>
+
 
 <div className="grid grid-cols-4">
   <div className="col-span-2">
